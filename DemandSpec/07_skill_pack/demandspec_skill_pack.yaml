@@ -1,0 +1,105 @@
+name: DemandSpec
+version: 1.0.0
+language: zh-CN
+description: 面向需求侧的 AI 辅助需求工程框架，将业务想法转化为需求卡片、澄清问题、业务模型、原型、PRD、验收标准、研发任务和复盘资产。
+entry_skill: S16_DemandSpec_Orchestrator
+modes:
+  - full
+  - quick
+  - review
+  - ai_scenario
+  - prototype
+  - handoff
+stages:
+  - Intake
+  - Clarify
+  - Diagnose
+  - Model
+  - Prototype
+  - Specify
+  - Validate
+  - Handoff
+  - Archive
+skills:
+  - id: S00
+    name: Demand Router
+    command: /demandspec route
+    output: 需求成熟度、推荐阶段、推荐技能
+  - id: S01
+    name: Demand Intake
+    command: /demandspec intake
+    output: 需求卡片
+  - id: S02
+    name: Demand Clarifier
+    command: /demandspec clarify
+    output: 澄清问题、假设、待确认项
+  - id: S03
+    name: Scope Definer
+    command: /demandspec scope
+    output: 范围、非范围、MVP、版本切片
+  - id: S04
+    name: Demand Diagnoser
+    command: /demandspec diagnose
+    output: 类型、复杂度、优先级、实施路径
+  - id: S05
+    name: AI Fit Evaluator
+    command: /demandspec ai-fit
+    output: AI可行性评估、数据要求、技术路径、人工兜底
+  - id: S06
+    name: Process Modeler
+    command: /demandspec process
+    output: 当前流程、目标流程、异常流程
+  - id: S07
+    name: Data & Rule Modeler
+    command: /demandspec data-rule
+    output: 字段、数据源、业务规则
+  - id: S08
+    name: Role & Permission Modeler
+    command: /demandspec permission
+    output: 角色、权限、可见性、操作边界
+  - id: S09
+    name: Prototype Architect
+    command: /demandspec prototype
+    output: 页面清单、页面结构、交互路径、低保真原型说明
+  - id: S10
+    name: Figma/MasterGo Prototype Generator
+    command: /demandspec prototype-generate
+    output: Figma/MasterGo JSON、组件树、交互表、生成 Prompt
+  - id: S11
+    name: PRD Writer
+    command: /demandspec prd
+    output: PRD
+  - id: S12
+    name: Acceptance Generator
+    command: /demandspec acceptance
+    output: 验收标准、测试场景
+  - id: S13
+    name: Requirement Reviewer
+    command: /demandspec review
+    output: 缺漏、矛盾、不可实现、不可验收项
+  - id: S14
+    name: Dev Handoff
+    command: /demandspec handoff
+    output: 前端、后端、算法、数据、测试任务
+  - id: S15
+    name: Archive & Learn
+    command: /demandspec archive
+    output: 变更记录、复盘报告、复用资产
+  - id: S16
+    name: DemandSpec Orchestrator
+    command: /demandspec
+    output: 端到端需求资产包
+prototype_tools:
+  supported_targets:
+    - Figma
+    - MasterGo
+    - MockingBot
+    - Axure
+    - JishiDesign
+  outputs:
+    - page_tree
+    - component_tree
+    - interaction_table
+    - design_prompt
+    - prototype_json
+    - review_checklist

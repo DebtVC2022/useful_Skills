@@ -1,0 +1,13 @@
+{
+  "name": "DemandSpec",
+  "version": "1.0.0",
+  "language": "zh-CN",
+  "description": "面向需求侧的 AI 辅助需求工程框架，将业务想法转化为需求卡片、澄清问题、业务模型、原型、PRD、验收标准、研发任务和复盘资产。",
+  "entry_skill": "S16_DemandSpec_Orchestrator",
+  "modes": ["full", "quick", "review", "ai_scenario", "prototype", "handoff"],
+  "stages": ["Intake", "Clarify", "Diagnose", "Model", "Prototype", "Specify", "Validate", "Handoff", "Archive"],
+  "prototype_tools": {
+    "supported_targets": ["Figma", "MasterGo", "MockingBot", "Axure", "JishiDesign"],
+    "outputs": ["page_tree", "component_tree", "interaction_table", "design_prompt", "prototype_json", "review_checklist"]
+  }
+}

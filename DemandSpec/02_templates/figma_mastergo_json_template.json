@@ -1,0 +1,54 @@
+{
+  "project": "DemandSpec Prototype",
+  "target_tool": "Figma/MasterGo",
+  "device": "PC",
+  "design_system": "Enterprise B-end",
+  "pages": [
+    {
+      "id": "P01",
+      "name": "页面名称",
+      "frame": {
+        "width": 1440,
+        "height": 1024,
+        "layout": "vertical",
+        "auto_layout": true,
+        "padding": 24,
+        "gap": 16
+      },
+      "sections": [
+        {
+          "id": "header",
+          "name": "顶部区域",
+          "component": "Header",
+          "children": [
+            {"type": "Text", "name": "页面标题", "content": "页面名称"},
+            {"type": "Button", "name": "主要操作", "text": "新建"}
+          ]
+        },
+        {
+          "id": "filter",
+          "name": "筛选区域",
+          "component": "FilterBar",
+          "children": [
+            {"type": "Input", "name": "关键词", "placeholder": "请输入关键词"},
+            {"type": "Select", "name": "状态", "options": ["全部", "待处理", "已完成"]}
+          ]
+        },
+        {
+          "id": "content",
+          "name": "主内容区",
+          "component": "DataTable",
+          "columns": [
+            {"field": "name", "label": "名称", "width": 180},
+            {"field": "status", "label": "状态", "width": 120},
+            {"field": "action", "label": "操作", "width": 160}
+          ]
+        }
+      ],
+      "interactions": [
+        {"trigger": "点击新建", "action": "navigate", "target": "P02"}
+      ],
+      "states": ["default", "loading", "empty", "error", "permission_denied"]
+    }
+  ]
+}
