@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demandspec-kit"
+version = "0.1.0"
+description = "DemandSpec requirement-side AI harness kit"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "DemandSpec Kit"}]
+license = {text = "MIT"}
+
+[project.scripts]
+demandspec = "demandspec_cli.cli:main"
+
+[tool.setuptools]
+packages = ["demandspec_cli"]
+include-package-data = true
