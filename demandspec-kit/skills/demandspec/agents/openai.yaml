@@ -1,0 +1,4 @@
+interface:
+  display_name: "DemandSpec"
+  short_description: "需求侧规格、变更、验收与交付工作流"
+  default_prompt: "Use $demandspec to turn this requirement into reviewable, traceable DemandSpec artifacts."

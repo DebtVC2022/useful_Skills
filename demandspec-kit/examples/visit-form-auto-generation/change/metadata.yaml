@@ -1,0 +1,15 @@
+id: visit-form-auto-generation
+title: 拜访单自动生成
+domain: crm
+type: ai
+profile: full
+owner: 算法团队
+reviewers:
+  - 产品负责人
+  - 测试负责人
+status: verified
+created_at: "2026-06-11"
+updated_at: "2026-06-11"
+approved_by: 需求委员会
+approved_at: "2026-06-11"
+demand_id: visit-form-auto-generation

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demandspec-kit"
+version = "0.2.0"
+description = "DemandSpec requirement-side AI harness kit"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["PyYAML>=6.0"]
+authors = [{name = "DemandSpec Kit"}]
+license = {text = "MIT"}
+
+[project.scripts]
+demandspec = "demandspec_cli.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["demandspec_cli*"]
+
+[tool.setuptools.package-data]
+"demandspec_cli.resources" = [
+  "configs/*",
+  "templates/*",
+  "templates/change/*",
+  "commands/codex/*",
+  "commands/claude/*",
+  "commands/generic/*",
+  "rules/*",
+  "skills/demandspec/*",
+  "skills/demandspec/agents/*",
+  "skills/demandspec/templates/*",
+]
