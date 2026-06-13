@@ -1,0 +1,25 @@
+output_language: "zh"
+include_raw_json: true
+max_model_retries: 2
+role_family_override: null
+seniority_override: null
+weights:
+  resume_quality:
+    information_completeness: 10
+    structure_readability: 10
+    experience_credibility: 10
+    achievement_impact: 15
+    capability_clarity: 10
+    risk_review_signals: 5
+  jd_company_match:
+    hard_requirement_match: 10
+    core_capability_match: 12
+    domain_industry_relevance: 6
+    seniority_match: 6
+    company_team_preference_match: 4
+    interview_validation_value: 2
+screening_buckets:
+  - strong_review
+  - review
+  - weak_review
+  - manual_review
