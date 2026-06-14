@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Core Notes"
+  short_description: "Maintain core-file notes and Obsidian graph links."
+  default_prompt: "Use $obsidian-core-notes to refresh core notes and folder indexes for this Obsidian vault."
