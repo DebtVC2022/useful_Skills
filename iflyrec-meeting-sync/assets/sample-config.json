@@ -1,0 +1,7 @@
+{
+  "target_dir": "%USERPROFILE%\\Documents\\Meeting Minutes",
+  "iflyrec_data_dir": "%APPDATA%\\iflyrecAssistant",
+  "iflyrec_log_dir": "%APPDATA%\\iflyrecAssistant\\logs",
+  "since_days": 3,
+  "update_obsidian_indexes": true
+}

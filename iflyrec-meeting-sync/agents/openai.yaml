@@ -1,0 +1,4 @@
+interface:
+  display_name: "讯飞听见会议同步"
+  short_description: "自动拉取讯飞听见会记智能纪要到本地 Markdown"
+  default_prompt: "Use $iflyrec-meeting-sync to install or diagnose automatic local export of Xunfei Iflyrec meeting minutes."
